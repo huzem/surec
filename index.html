@@ -188,20 +188,19 @@
     
     <section class="intro-card">
         <h2><i class="fas fa-graduation-cap"></i> Rehber Kılavuzlar</h2>
-        <p> ÜBYS'de ders & program çıktılarını izleme süreçlerine yönelik gerekli işlemlerin nasıl gerçekleştirileceğine yönelik <strong>4 bölüm</strong> şeklinde kılavuzlar birimimizce hazırlanmıştır. Açılır menülere tıklayarak her bir bölümün interaktif kılavuzunu görüntüleyebilirsiniz.</p>
+        <p> ÜBYS üzerinden ders öğrenme & program çıktılarını izleme süreçlerine yönelik gerekli işlemlerin nasıl gerçekleştirileceğine yönelik kılavuzlar birimimizce hazırlanmıştır. Açılır menülere tıklayarak her bir bölüm altında interaktif kılavuzlarımızı görüntüleyebilirsiniz.</p>
     </section>
 
     <!-- 1. BÖLÜM -->
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3><i class="fas fa-award"></i> Bölüm 1: Kullanım Tipi Alanının Doldurulması</h3>
+            <h3><i class="fas fa-keyboard"></i> 1. Bölüm: Ölçme Aracı Ekleme & Madde Girişi</h3>
             <i class="fas fa-chevron-down arrow"></i>
         </div>
         <div class="accordion-content">
             <div class="canva-wrapper">
                 <div class="video-container">
-                    <!-- BURAYA 1. BÖLÜM CANVA EMBED LİNKİNİ YAPIŞTIRIN -->
-                    <iframe loading="lazy" src="https://www.canva.com/design/DAHFHuDTamM/J3ryUfQrXv3qqqqbkDyGpQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+                    <iframe loading="lazy" src="https://www.canva.com/design/DAHFH4qD708/XgS3-ZAz27rmZj3X_p_ZCw/view?embed" allowfullscreen="allowfullscreen" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -210,14 +209,13 @@
     <!-- 2. BÖLÜM -->
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3><i class="fas fa-keyboard"></i> Bölüm 2: Soru Girişi Yapılması</h3>
+            <h3><i class="fas fa-project-diagram"></i> 2. Bölüm: Ölçme Aracı Maddelerinin İlişkilendirilmesi</h3>
             <i class="fas fa-chevron-down arrow"></i>
         </div>
         <div class="accordion-content">
             <div class="canva-wrapper">
                 <div class="video-container">
-                    <!-- BURAYA 2. BÖLÜM CANVA EMBED LİNKİNİ YAPIŞTIRIN -->
-                    <iframe loading="lazy" src="https://www.canva.com/design/DAHFH4qD708/XgS3-ZAz27rmZj3X_p_ZCw/view?embed" allowfullscreen="allowfullscreen" allowfullscreen></iframe>
+                    <iframe loading="lazy" src="https://www.canva.com/design/DAHFIPy_0lo/837xuFhedfw2ARslF7ZxbQ/view?embed" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -226,29 +224,12 @@
     <!-- 3. BÖLÜM -->
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3><i class="fas fa-project-diagram"></i> Bölüm 3: Soruların İlişkilendirilmesi</h3>
+            <h3><i class="fas fa-chart-pie"></i> 3. Bölüm: Değerlendirme Sistemi</h3>
             <i class="fas fa-chevron-down arrow"></i>
         </div>
         <div class="accordion-content">
             <div class="canva-wrapper">
                 <div class="video-container">
-                    <!-- BURAYA 3. BÖLÜM CANVA EMBED LİNKİNİ YAPIŞTIRIN -->
-                    <iframe loading="lazy" src="https://www.canva.com/design/DAHFIPy_0lo/837xuFhedfw2ARslF7ZxbQ/view?embed" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4. BÖLÜM -->
-    <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3><i class="fas fa-chart-pie"></i> Bölüm 4: Değerlendirme Sistemi</h3>
-            <i class="fas fa-chevron-down arrow"></i>
-        </div>
-        <div class="accordion-content">
-            <div class="canva-wrapper">
-                <div class="video-container">
-                    <!-- BURAYA 4. BÖLÜM CANVA EMBED LİNKİNİ YAPIŞTIRIN -->
                     <iframe loading="lazy" src="https://www.canva.com/design/DAHFIDbFQZU/AnYJiJfyXFrabqEQRKQ6YQ/view?embed" allowfullscreen></iframe>
                 </div>
             </div>
@@ -259,7 +240,7 @@
 
 <footer>
     &copy; 2026 Hitit Üniversitesi - Uzaktan Eğitim Uygulama ve Araştırma Merkezi <br>
-    ÜBYS Ders & Program Çıktılarını İzleme Süreçleri Sayfası
+    Ders & Program Çıktılarını İzleme Süreçleri Kılavuzu
 </footer>
 
 <script>
@@ -267,7 +248,6 @@
         const item = header.parentElement;
         const isActive = item.classList.contains('active');
         
-        // Diğerlerini kapatmak isterseniz bu döngüyü kullanın (Opsiyonel)
         document.querySelectorAll('.accordion-item').forEach(el => {
             el.classList.remove('active');
         });
