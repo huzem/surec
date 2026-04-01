@@ -228,6 +228,31 @@
         transform: rotate(90deg);
     }
 }
+      /* Uyarı Kutusu Tasarımı */
+.alert-warning {
+    background-color: #fff3cd;
+    border-left: 6px solid #ffc107;
+    color: #856404;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.alert-warning i {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+.alert-warning strong {
+    color: #c00; /* Daha belirgin bir kırmızı */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
     </style>
 </head>
 <body>
@@ -321,6 +346,17 @@
             <h4>8. Değerlendirme</h4>
             <p>Çıktı bazlı analiz ve başarı düzeyi</p>
         </div>
+
+      <section class="alert-warning">
+    <i class="fas fa-exclamation-triangle"></i>
+    <div>
+        <strong>Önemli Uyarı: Not İlanından Önce Tamamlayınız!</strong>
+        <p style="margin: 0;"> Kılavuzda belirtilen tüm tanımlama ve ilişkilendirme işlemlerini <strong>not ilanınızı gerçekleştirmeden önce</strong> tamamlamaya özen gösteriniz. 
+            <br><br>
+            <i class="fas fa-info-circle"></i> <em>Dikkat: Sistemde öğrenci notu varken 3. bölümde anlatılan işlemlerin gerçekleştirilmesi durumunda, ilgili maddelere ait kayıtlı notlar <strong>silinebilmektedir.</strong></em>
+        </p>
+    </div>
+</section>
 
     </div>
 </section>
