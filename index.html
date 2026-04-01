@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÜBYS Ders & Program Çıktılarını İzleme Süreçleri Kılavuzu | Hitit Üniversitesi</title>
+    <title>Hitit Üniversitesi | Ders Öğrenme & Program Çıktılarını İzleme Süreçleri Kılavuzu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -169,6 +169,65 @@
             .header-container { flex-direction: column; text-align: center; }
             .header-title h1 { font-size: 1rem; }
         }
+
+      /* SÜREÇ AKIŞI */
+.process-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.step {
+    flex: 1 1 160px;
+    min-width: 150px;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--hitit-gold);
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step .icon {
+    font-size: 1.5rem;
+    color: var(--hitit-red);
+    margin-bottom: 5px;
+}
+
+.step h4 {
+    margin: 5px 0;
+    color: var(--hitit-red);
+    font-size: 0.9rem;
+}
+
+.step p {
+    font-size: 0.75rem;
+    color: #555;
+    margin: 0;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: var(--hitit-gold);
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .process-flow {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
     </style>
 </head>
 <body>
@@ -179,7 +238,7 @@
             <img src="https://hitit.edu.tr/images/HititLogoYeni.svg" alt="Hitit Üniversitesi">
         </div>
         <div class="header-title">
-            <h1>Uzaktan Eğitim Uygulama ve Araştırma Merkezi <br> Ders & Program Çıktılarını İzleme Süreçleri Kılavuzu</h1>
+            <h1>Uzaktan Eğitim Uygulama ve Araştırma Merkezi <br> Ders Öğrenme & Program Çıktılarını İzleme Süreçleri Kılavuzu</h1>
         </div>
     </div>
 </header>
@@ -190,6 +249,81 @@
         <h2><i class="fas fa-graduation-cap"></i> Rehber Kılavuzlar</h2>
         <p> ÜBYS üzerinden ders öğrenme & program çıktılarını izleme süreçlerine yönelik gerekli işlemlerin nasıl gerçekleştirileceğine yönelik kılavuzlar birimimizce hazırlanmıştır. Açılır menülere tıklayarak her bir bölüm altında interaktif kılavuzlarımızı görüntüleyebilirsiniz.</p>
     </section>
+
+  <section class="intro-card">
+    <h2><i class="fas fa-project-diagram"></i> Süreç Akışı</h2>
+    <p>
+        Ders ve program çıktılarının izlenmesi süreci; ölçme araçlarının belirlenmesi,
+        maddelerin oluşturulması, öğrenme çıktıları ile ilişkilendirilmesi ve öğrenci
+        bazlı değerlendirme aşamalarından oluşmaktadır.
+    </p>
+
+    <div class="process-flow">
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-list"></i></div>
+            <h4>1. Ölçme Aracı Belirleme</h4>
+            <p>Klasik, test, proje, performans seçimi</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-keyboard"></i></div>
+            <h4>2. Madde Girişi</h4>
+            <p>Soru ve değerlendirme maddelerinin oluşturulması</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>3. Madde Gruplama</h4>
+            <p>Maddelerin anlamlı gruplar halinde düzenlenmesi</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-book"></i></div>
+            <h4>4. Haftalık İçerik</h4>
+            <p>Ders haftaları ile eşleştirme</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-bullseye"></i></div>
+            <h4>5. Ders Çıktıları</h4>
+            <p>Ders öğrenme çıktıları ile ilişkilendirme</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-sitemap"></i></div>
+            <h4>6. Program Çıktıları</h4>
+            <p>Program kazanımları ile eşleştirme</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>7. Not Girişi</h4>
+            <p>Öğrenci bazlı puanlama işlemleri</p>
+        </div>
+
+        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="step">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h4>8. Değerlendirme</h4>
+            <p>Çıktı bazlı analiz ve başarı düzeyi</p>
+        </div>
+
+    </div>
+</section>
 
     <!-- 1. BÖLÜM -->
     <div class="accordion-item">
@@ -239,8 +373,7 @@
 </div>
 
 <footer>
-    &copy; 2026 Hitit Üniversitesi - Uzaktan Eğitim Uygulama ve Araştırma Merkezi <br>
-    Ders & Program Çıktılarını İzleme Süreçleri Kılavuzu
+    &copy; 2026 Hitit Üniversitesi - Uzaktan Eğitim Uygulama ve Araştırma Merkezi
 </footer>
 
 <script>
